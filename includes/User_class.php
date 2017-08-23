@@ -27,9 +27,9 @@ class User {
     }
     
     public function getFirstAndLastName() {
-        //$username = $this->user['username'];
-        //$query = mysqli_query($this->connection, "SELECT first_name, last_name FROM users WHERE username='$username'");
-        //$row = mysqli_fetch_assoc($query);
-        return $this->user['first_name'] . " " . $this->user['last_name'];
+        $username = $this->user['username'];
+        $query = mysqli_query($this->connection, "SELECT first_name, last_name FROM users WHERE username='$username'");
+        $row = mysqli_fetch_assoc($query);
+        return $row['first_name'] . " " . $row['last_name'];
     }
 }

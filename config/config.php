@@ -5,7 +5,7 @@ session_start();
 
 $timezone = date_default_timezone_set("Europe/London");
 
-$connection = mysqli_connect("localhost", "root", "root", "soc_net"); // connection variable
+$connection = mysqli_connect("better-planet.org", "josh1234", "jabberwocky1234", "soc_net"); // connection variable
 $conn_array = array();
 
 if(mysqli_connect_errno())

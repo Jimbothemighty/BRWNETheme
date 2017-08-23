@@ -1,9 +1,4 @@
 <?php
-//require 'config/config.php';
-//require 'includes/User_class.php';
-//require 'includes/Post_class.php';
-//require 'messageAjax.php';
-
 class Messenger {
     private $user_obj;
     private $connection;
